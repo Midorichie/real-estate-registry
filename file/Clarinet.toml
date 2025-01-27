@@ -1,0 +1,16 @@
+[project]
+name = "real-estate-registry"
+requirements = []
+costs_version = 2
+[contracts.real-estate-registry]
+path = "contracts/real-estate-registry.clar"
+depends_on = []
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = true
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
